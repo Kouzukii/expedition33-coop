@@ -1,0 +1,8 @@
+﻿<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="Expedition33Coop.csproj" />
+  <Project Path="ue-hook-blueprints/ue-hook-blueprints/ue-hook-blueprints.csproj" />
+  <Project Path="ue-hook-blueprints/UAssetAPI/UAssetAPI/UAssetAPI.csproj" />
+</Solution>
