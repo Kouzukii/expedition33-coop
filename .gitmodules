@@ -1,6 +1,3 @@
 [submodule "ue-hook-blueprints"]
 	path = ue-hook-blueprints
 	url = https://github.com/Kouzukii/ue-hook-blueprints.git
-[submodule "Sandfall\\Plugins\\ALS-Community"]
-	path = Sandfall\\Plugins\\ALS-Community
-	url = ./Sandfall\\Plugins\\ALS-Community

@@ -16,4 +16,12 @@
       <ProjectReference Include="ue-hook-blueprints\UAssetAPI\UAssetAPI\UAssetAPI.csproj" />
       <ProjectReference Include="ue-hook-blueprints\ue-hook-blueprints\ue-hook-blueprints.csproj" />
     </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="LICENSE" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="ue-hook-blueprints\README.md" />
+    </ItemGroup>
 </Project>
