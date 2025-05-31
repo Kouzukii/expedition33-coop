@@ -22,6 +22,11 @@ If the `~mods` folder does not exist, create it.
 
 The mod is still in the very early stages, if you experience any issues, please file an issue with an exact description and your save game attached.
 
+### Known Issues
+
+- Press & hold actions in menus (Learn Skill, Upgrade Attributes, Level Weapon) can currently only be controlled by player 1
+  - Can also be slightly mitigated by moving the mouse after the held action failed
+
 ## For Developers
 
 ### Building

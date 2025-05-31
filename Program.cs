@@ -9,7 +9,7 @@ using UAssetAPI.UnrealTypes;
 using UAssetAPI.Unversioned;
 
 var usmap = new Usmap("Mappings.usmap");
-// patch broken struct reference in PlayerIndicator
+// patch broken struct reference in PlayerIndicator & ModLibrary
 {
     var playerIndicator = new UAsset(@".\Sandfall\Windows\Sandfall\Content\Coop\PlayerIndicator.uasset", EngineVersion.VER_UE5_4, usmap);
     var originalStruct = new UAsset(@".\Export\Sandfall/Content/jRPGTemplate/Structures/S_jRPG_PartySlot.uasset", EngineVersion.VER_UE5_4, usmap);
@@ -17,6 +17,11 @@ var usmap = new Usmap("Mappings.usmap");
     accessedStructProp.Value = originalStruct.GetNameMapIndexList().First(i => i.Value.StartsWith("CharacterHardcodedName")).Value;
     playerIndicator.Write(@".\Sandfall\Windows\Sandfall\Content\Coop\PlayerIndicator.uasset");
     Console.WriteLine("Patched PlayerIndicator");
+    var modLibrary = new UAsset(@".\Sandfall\Windows\Sandfall\Content\Coop\ModLibrary.uasset", EngineVersion.VER_UE5_4, usmap);
+    accessedStructProp = modLibrary.GetNameMapIndexList().First(i => i.Value.StartsWith("CharacterHardcodedName"));
+    accessedStructProp.Value = originalStruct.GetNameMapIndexList().First(i => i.Value.StartsWith("CharacterHardcodedName")).Value;
+    modLibrary.Write(@".\Sandfall\Windows\Sandfall\Content\Coop\ModLibrary.uasset");
+    Console.WriteLine("Patched ModLibrary");
 }
 
 {
