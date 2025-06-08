@@ -2,7 +2,7 @@
 
 For those who come after, with your friends!
 
-![](./docs/header.jpg)
+![](./docs/header_s.jpg)
 
 ## How it works
 
